@@ -1,0 +1,64 @@
+/*
+Theme Name: Bud-Spec
+Theme URI: https://github.com/pkaczmarek8-ops/cms3
+Author: Patryk Kaczmarek
+Description: Motyw blokowy dla fikcyjnej firmy Bud-Spec Usługi Budowlane.
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 7.4
+Version: 0.1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: budspec
+Tags: block-patterns, full-site-editing, accessibility-ready
+*/
+
+/* Reguły dostępności WCAG 2.2 z L3 (style wizualne znajdują się w theme.json) */
+html {
+	scroll-padding-top: 6rem;
+	overflow-x: clip;
+}
+
+img,
+video,
+iframe,
+input,
+textarea {
+	max-width: 100%;
+}
+
+:focus-visible {
+	outline: 3px solid #1a1a1a;
+	outline-offset: 2px;
+	box-shadow: 0 0 0 2px #ffffff;
+}
+
+.skip-link:focus {
+	background-color: #ffffff;
+	color: #1a1a1a;
+	padding: 0.75rem 1rem;
+	z-index: 100000;
+}
+
+.wp-block-navigation a,
+input[type="checkbox"] {
+	min-height: 24px;
+	min-width: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+@media (forced-colors: active) {
+	.wp-block-button__link {
+		border: 2px solid ButtonText;
+	}
+}
