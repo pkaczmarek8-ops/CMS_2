@@ -130,4 +130,4 @@ Blok statyczny zapisuje gotowy HTML bezpośrednio w treści strony w bazie danyc
 
 ## Użycie AI (MP2)
 - Narzędzie: Gemini.
-- Do czego użyte: pomoc w napisaniu plików `theme.json`, szablonów HTML, wzorców PHP, `functions.php`, plików bloku dynamicznego oraz wyłapaniu błędów składniowych / codespace / php
+- Do czego użyte: pomoc w napisaniu plików `theme.json`, szablonów HTML, wzorców PHP, `functions.php`, plików bloku dynamicznego oraz wyłapaniu błędów składniowych / codespace / php, uporządkowanie readme
